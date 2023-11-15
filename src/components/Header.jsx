@@ -14,7 +14,7 @@ const Header = () => {
     <>
       <div className="bg_header pb-5">
         <Container>
-          <div className="d-flex align-items-center justify-content-between py-3 position_fixed z-2 end-0 start-0 px-4 px-lg-0">
+          <div className="d-flex align-items-center justify-content-between py-3 position_fixed z-2 end-0 start-0 px-4 px-xl-0">
             <div className="curser_pointer">
               <img
                 src={PageLogo}
