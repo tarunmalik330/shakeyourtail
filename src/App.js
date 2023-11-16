@@ -1,5 +1,6 @@
 
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import AboutUs from './components/AboutUs';
 import CustomerExperience from './components/CustomerExperience';
@@ -14,6 +15,7 @@ import BackToTop from './assets/images/png/top.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
+import { Loader } from './components/IconImg';
 
 function App() {
   useEffect(() => {
@@ -25,6 +27,7 @@ function App() {
     );
     Aos.refresh()
   });
+  // ----------------backToTop----------------
   const top = () => {
     document.documentElement.scrollTop = 0;
   };
@@ -38,20 +41,37 @@ function App() {
       }
     });
   }, []);
+  // -------------------preloader------------------------
+  document.getElementById('root')
+  const [screenLoading, setScreenLoading] = useState(false);
+  useEffect(() => {
+    setScreenLoading(true);
+    setTimeout(() => {
+      setScreenLoading(false);
+    }, 5000);
+  }, []);
   return (
     <div>
-      <Header />
-      <MainFeatures />
-      <CustomerExperience />
-      <HowItWork />
-      <Pricingplan />
-      <AboutUs />
-      <Testimonial />
-      <Faq />
-      <Footer />
-      <div>
-        <img onClick={() => top()} src={BackToTop} alt='BackToTop' className={backToTop ? "back_to_top" : "d-none"} />
-      </div>
+      {screenLoading ? (
+        <Loader />
+      ) : (
+        <BrowserRouter>
+          <>
+            <Header />
+            <MainFeatures />
+            <CustomerExperience />
+            <HowItWork />
+            <Pricingplan />
+            <AboutUs />
+            <Testimonial />
+            <Faq />
+            <Footer />
+            <div>
+              <img onClick={() => top()} src={BackToTop} alt='BackToTop' className={backToTop ? "back_to_top" : "d-none"} />
+            </div>
+          </>
+        </BrowserRouter>
+      )}
     </div>
   );
 }

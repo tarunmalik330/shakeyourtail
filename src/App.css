@@ -131,6 +131,15 @@ html {
 
 }
 
+/* ---------preloader----------- */
+.mw_100 {
+  max-width: 100px;
+}
+
+.bg-yellow {
+  background-color: #FFC100;
+}
+
 /* -------------------------header---------------------- */
 .bg_header {
   background-image: url("./assets/images/webp/BgHeader.webp");
