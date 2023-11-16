@@ -27,6 +27,7 @@ const Header = () => {
                 <a
                   className="fs_6sm text-white fw-medium ff-HelveticaNeue nav_line position-relative"
                   href="#home"
+                  onClick={() => setshow(!show)}
                 >
                   Home
                 </a>{" "}
@@ -35,6 +36,7 @@ const Header = () => {
                 <a
                   className="fs_6sm text-white fw-medium ff-HelveticaNeue nav_line position-relative"
                   href="#Features"
+                  onClick={() => setshow(!show)}
                 >
                   Features
                 </a>{" "}
@@ -43,6 +45,7 @@ const Header = () => {
                 <a
                   className="fs_6sm text-white fw-medium ff-HelveticaNeue nav_line position-relative"
                   href="#Pricing"
+                  onClick={() => setshow(!show)}
                 >
                   Pricing
                 </a>{" "}
@@ -51,6 +54,7 @@ const Header = () => {
                 <a
                   className="fs_6sm text-white fw-medium ff-HelveticaNeue nav_line position-relative"
                   href="#FreeTrial"
+                  onClick={() => setshow(!show)}
                 >
                   Free Trial
                 </a>{" "}

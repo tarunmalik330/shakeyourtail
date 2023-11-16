@@ -9,6 +9,11 @@
   text-decoration: none !important;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 /* --------------------------Common-Classes---------------------------- */
 .ff-HelveticaNeue {
   font-family: 'Helvetica Neue', sans-serif;
@@ -66,6 +71,10 @@
   font-size: var(--fs-xxl);
 }
 
+.fs_76 {
+  font-size: 76px;
+}
+
 .lh_101 {
   line-height: 101.687%;
 }
@@ -90,6 +99,10 @@
   opacity: 0.8;
 }
 
+.opacity_12 {
+  opacity: 0.12;
+}
+
 .gap_29 {
   gap: 29px;
 }
@@ -104,6 +117,14 @@
 
 .text_blue {
   color: #4361FF;
+}
+
+/* ------------------back-to-top------------------- */
+.back_to_top {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  cursor: pointer !important;
 }
 
 /* -------------------------header---------------------- */
@@ -350,6 +371,45 @@
   padding-right: 12px;
 }
 
+.purple-flower {
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  transition: all .3s linear;
+}
+
+.Features_Card1:hover .purple-flower {
+  opacity: 1;
+}
+
+.Features_Card2:hover .purple-flower {
+  opacity: 1;
+}
+
+.Features_Card3:hover .purple-flower {
+  opacity: 1;
+}
+
+.Features_Card4:hover .purple-flower {
+  opacity: 1;
+}
+
+.about_card:hover .purple-flower {
+  opacity: 1;
+}
+
+.Clients_card:hover .purple-flower {
+  opacity: 1;
+}
+
+.Notification_card:hover .purple-flower {
+  opacity: 1;
+}
+
+.Schedule_card:hover .purple-flower {
+  opacity: 1;
+}
+
 /* ----------------------------AboutUs---------------------------- */
 .bg_about {
   background-color: #FFC100;
@@ -466,6 +526,37 @@
   padding-top: 50px;
 }
 
+.text_yell {
+  color: #FFC100;
+}
+
+.text_Sky {
+  color: #45C6CE;
+}
+
+.text_Blue {
+  color: #5B95E0;
+}
+
+.text_Red1 {
+  color: #F2205C;
+}
+
+.work-text {
+  bottom: 21px;
+  right: -3px;
+}
+
+.work-text1 {
+  bottom: 18px;
+  left: 39%;
+}
+
+.work-text2 {
+  bottom: 11%;
+  left: 12%;
+}
+
 /* ----------------------------------Pricing-Plane----------------------------------- */
 .pricewhite-card {
   border-radius: 8px;
@@ -558,6 +649,38 @@
   letter-spacing: 0.065px;
 }
 
+.checkbox-label {
+  background-color: #5B95E0;
+  width: 68.001px;
+  height: 37.47px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid #5B95E0; */
+  transition: all .3s linear;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  Width: 30.49px;
+  Height: 30.49px;
+  position: absolute;
+  left: 3.59px;
+  top: 3.59px;
+  bottom: 3.59px;
+  border-radius: 50%;
+  transition: all .3s linear;
+}
+
+.checkbox:checked+.checkbox-label .ball {
+  transform: translateX(98%);
+  transition: all .3s linear;
+}
+
 /* --------------------------Testimonial-------------------------- */
 .py_Testmonial {
   padding-top: 80px;
@@ -566,6 +689,21 @@
 
 .pb_100 {
   padding-bottom: 50px;
+}
+
+.arrows-np {
+  bottom: -10px;
+  left: 40px;
+}
+
+.btn-arrow {
+  transition: all .3s linear;
+  opacity: 0.3;
+}
+
+.btn-arrow:hover,
+.btn-arrow:focus {
+  opacity: 1;
 }
 
 /* ---------------------Faq-section------------------------ */
@@ -790,6 +928,23 @@ img.vertical_animation {
     width: 100%;
     padding-left: 100px;
     padding-top: 50px;
+  }
+
+  .work-text {
+    bottom: -24px;
+    right: -17px;
+  }
+
+  .work-text1 {
+    bottom: -33px;
+    left: unset !important;
+    right: 47% !important;
+  }
+
+  .work-text2 {
+    bottom: -6%;
+    left: unset !important;
+    right: 72% !important;
   }
 }
 

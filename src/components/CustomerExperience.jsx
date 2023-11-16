@@ -10,6 +10,7 @@ import { ScheduleGreen } from "./IconImg";
 import { Clients } from "./IconImg";
 import { Reports } from "./IconImg";
 import { Services } from "./IconImg";
+import { Purpleflower, Greenflower, Orangeflower, Blueflower } from "./IconImg";
 
 const CustomerExperience = () => {
   const settings = {
@@ -128,7 +129,10 @@ const CustomerExperience = () => {
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
-            <div className="Features_Card1">
+            <div className="Features_Card1 position-relative">
+              <div className="position-absolute purple-flower">
+                <Greenflower />
+              </div>
               <ScheduleGreen />
               <h4 className="fs_6md ff-roboto fw-medium lh_111 text-black mb-0 pb-2">
                 Schedule
@@ -145,7 +149,10 @@ const CustomerExperience = () => {
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
-            <div className="Features_Card2">
+            <div className="Features_Card2 position-relative">
+              <div className=" position-absolute purple-flower">
+                <Purpleflower />
+              </div>
               <Clients />
               <h4 className="fs_6md ff-roboto fw-medium lh_111 text-black mb-0 pb-2">
                 Clients & Pets
@@ -163,7 +170,10 @@ const CustomerExperience = () => {
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
-            <div className="Features_Card3">
+            <div className="Features_Card3 position-relative">
+              <div className="purple-flower position-absolute">
+                <Orangeflower />
+              </div>
               <Reports />
               <h4 className="fs_6md ff-roboto fw-medium lh_111 text-black mb-0 pb-2">
                 Reports
@@ -180,7 +190,10 @@ const CustomerExperience = () => {
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
-            <div className="Features_Card4">
+            <div className="Features_Card4 position-relative">
+              <div className="purple-flower position-absolute">
+                <Blueflower />
+              </div>
               <Services />
               <h4 className="fs_6md ff-roboto fw-medium lh_111 text-black mb-0 pb-2">
                 Services

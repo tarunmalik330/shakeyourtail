@@ -11,7 +11,7 @@ import { Telegrame } from "./IconImg";
 
 const Footer = () => {
   return (
-    <div className="Bg_Footer mt_2">
+    <div id="ContactUs" className="Bg_Footer mt_2">
       <Container>
         <Row className="align-items-center justify-content-center py_footer">
           <Col lg={6}>
@@ -49,7 +49,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="ff-HelveticaNeue fs_6md fw-lighter opacity_08 lh_150 mb-0 text-white nav_line position-relative"
-                      href=""
+                      href="#AboutUs"
                     >
                       About Us
                     </a>
@@ -57,7 +57,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="ff-HelveticaNeue fs_6md fw-lighter opacity_08 lh_150 mb-0 text-white nav_line position-relative"
-                      href=""
+                      href="#Features"
                     >
                       Features
                     </a>
@@ -65,7 +65,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="ff-HelveticaNeue fs_6md fw-lighter opacity_08 lh_150 mb-0 text-white nav_line position-relative"
-                      href=""
+                      href="#pricing"
                     >
                       Pricing
                     </a>
@@ -73,7 +73,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="ff-HelveticaNeue fs_6md fw-lighter opacity_08 lh_150 mb-0 text-white nav_line position-relative"
-                      href=""
+                      href="#HowItWork"
                     >
                       How It Work
                     </a>
@@ -81,7 +81,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="ff-HelveticaNeue fs_6md fw-lighter opacity_08 lh_150 mb-0 text-white nav_line position-relative"
-                      href=""
+                      href="#Features"
                     >
                       New Features
                     </a>
@@ -96,7 +96,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="ff-HelveticaNeue fs_6md fw-lighter opacity_08 lh_150 mb-0 text-white nav_line position-relative"
-                      href=""
+                      href="#Testimonials"
                     >
                       Testimonials
                     </a>
@@ -104,7 +104,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="ff-HelveticaNeue fs_6md fw-lighter opacity_08 lh_150 mb-0 text-white nav_line position-relative"
-                      href=""
+                      href="#Faq"
                     >
                       FAQs
                     </a>
@@ -112,7 +112,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="ff-HelveticaNeue fs_6md fw-lighter opacity_08 lh_150 mb-0 text-white nav_line position-relative"
-                      href=""
+                      href="#ContactUs"
                     >
                       Contact Us
                     </a>

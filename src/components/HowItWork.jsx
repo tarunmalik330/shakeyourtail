@@ -11,7 +11,7 @@ import Timelinebell4 from "../assets/images/webp/Timeline_bell4.webp";
 
 const HowItWork = () => {
   return (
-    <div className="pt_work">
+    <div id="HowItWork" className="pt_work">
       <Container>
         <h2
           className="fs_8xl text_black12 ff-roboto fw-medium lh_111"
@@ -53,6 +53,9 @@ const HowItWork = () => {
               <div className="timeline_bell1">
                 <img src={Timelinebell1} alt="Timelinebell1" />
               </div>
+              <p className="ff-HelveticaNeue fs_76 fw-bold lh_150 opacity_12 text_yell position-absolute work-text mb-0">
+                01
+              </p>
             </div>
           </div>
           <div
@@ -72,6 +75,9 @@ const HowItWork = () => {
               <div className="timeline_bell1">
                 <img src={Timelinebell2} alt="Timelinebell2 " />
               </div>
+              <p className="ff-HelveticaNeue fs_76 fw-bold lh_150 opacity_12 text_Sky position-absolute work-text mb-0">
+                02
+              </p>
             </div>
           </div>
           <div
@@ -91,6 +97,9 @@ const HowItWork = () => {
               <div className="timeline_bell2">
                 <img src={Timelinebell3} alt="Timelinebell3" />
               </div>
+              <p className="ff-HelveticaNeue fs_76 fw-bold lh_150 opacity_12 text_Blue position-absolute work-text1 mb-0">
+                03
+              </p>
             </div>
           </div>
           <div
@@ -110,6 +119,9 @@ const HowItWork = () => {
               <div className="timeline_bell2">
                 <img src={Timelinebell4} alt="Timelinebell4" />
               </div>
+              <p className="ff-HelveticaNeue fs_76 fw-bold lh_150 opacity_12 text_Red1 position-absolute work-text2 mb-0">
+                04
+              </p>
             </div>
           </div>
         </div>

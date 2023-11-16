@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Righttickicon } from "./IconImg";
-import { Togglebtn } from "./IconImg";
 
 const Pricingplan = () => {
   return (
@@ -32,7 +31,12 @@ const Pricingplan = () => {
           data-aos-anchor-placement="center-bottom"
         >
           <p className="mb-0 ff-roboto fs_4md fw-bold text_blue5">£ GBP</p>
-          <Togglebtn />
+          <div>
+            <input type="checkbox" className="checkbox" id="checkbox" hidden />
+            <label htmlFor="checkbox" className="checkbox-label">
+              <span className="ball"></span>
+            </label>
+          </div>
           <p className="mb-0 ff-roboto fs_4md fw-normal text-black opacity_07">
             $ USD
           </p>

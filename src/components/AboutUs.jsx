@@ -7,12 +7,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import GooglePlay from "../assets/images/webp/GooglePlay.webp";
 import AppStore from "../assets/images/webp/AppStore.webp";
-// import MobileGroup from "../assets/images/png/MobileGroup.png";
 import { FoundedSvg } from "./IconImg";
 import { ProductLounchSvg } from "./IconImg";
 import { PetsSvg } from "./IconImg";
 import { ServicesSvg } from "./IconImg";
-import PinkCard from "../assets/images/webp/Pink_CardImg.webp";
+import { Purpleflower, Greenflower, Orangeflower, Blueflower } from "./IconImg";
 
 const AboutUs = () => {
   const settings = {
@@ -52,7 +51,7 @@ const AboutUs = () => {
     ],
   };
   return (
-    <div className="bg_Yellow bg_about">
+    <div id="AboutUs" className="bg_Yellow bg_about">
       <Container>
         <Row className="pt_download">
           <Col lg={6} className="d-flex flex-column justify-content-center">
@@ -113,7 +112,10 @@ const AboutUs = () => {
         </div>
         <Slider {...settings}>
           <div className="px_12" data-aos="fade-up" data-aos-duration="3000">
-            <div className="about_card Founded_Card">
+            <div className="about_card Founded_Card position-relative">
+              <div className="position-absolute purple-flower">
+                <Greenflower />
+              </div>
               <FoundedSvg />
               <h4 className="fw-medium lh_111 fs_6md ff-roboto text-black mb-0 pb-8">
                 Founded
@@ -129,11 +131,9 @@ const AboutUs = () => {
           </div>
           <div className="px_12" data-aos="fade-up" data-aos-duration="3000">
             <div className="about_card ProductLounch_Card position-relative">
-              <img
-                src={PinkCard}
-                alt="PinkCard"
-                className="position-absolute bottom-0 end-0"
-              />
+              <div className="purple-flower position-absolute">
+                <Purpleflower />
+              </div>
               <ProductLounchSvg />
               <h4 className="fw-medium lh_111 fs_6md ff-roboto text-black mb-0 pb-8">
                 Product Launch
@@ -148,7 +148,10 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="px_12" data-aos="fade-up" data-aos-duration="3000">
-            <div className="about_card pets_Card">
+            <div className="about_card pets_Card position-relative">
+              <div className="position-absolute purple-flower">
+                <Orangeflower />
+              </div>
               <PetsSvg />
               <h4 className="fw-medium lh_111 fs_6md ff-roboto text-black mb-0 pb-8">
                 Pet Schedule Released
@@ -162,7 +165,10 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="px_12" data-aos="fade-up" data-aos-duration="3000">
-            <div className="about_card Services_Card">
+            <div className="about_card Services_Card position-relative">
+              <div className="purple-flower position-absolute">
+                <Blueflower />
+              </div>
               <ServicesSvg />
               <h4 className="fw-medium lh_111 fs_6md ff-roboto text-black mb-0 pb-8">
                 Subscription Service

@@ -5,15 +5,23 @@ import Col from "react-bootstrap/Col";
 import { Pets } from "./IconImg";
 import { Schedule } from "./IconImg";
 import { Nortification } from "./IconImg";
-import ScheduleImg from "../assets/images/webp/ScheduleImg.webp";
+import { Blueflower } from "./IconImg";
+import { Orangeflower } from "./IconImg";
+import { Yellowflower } from "./IconImg";
 
 const MainFeatures = () => {
   return (
-    <div className="bg-white pt_90">
+    <div id="Features" className="bg-white pt_90">
       <Container>
         <Row className="flex-column-reverse flex-lg-row">
           <Col lg={3}>
-            <div className="Clients_card mb-4" data-aos="zoom-out-up">
+            <div
+              className="Clients_card mb-4 position-relative"
+              data-aos="zoom-out-up"
+            >
+              <div className="position-absolute purple-flower">
+                <Blueflower />
+              </div>
               <Pets />
               <p className="lh_111 fs_6md ff-roboto fw-medium text-black mb-0 pb-2 pt-1">
                 Clients & Pets
@@ -25,9 +33,12 @@ const MainFeatures = () => {
               </p>
             </div>
             <div
-              className="Notification_card mt-2 mb-4 mb-lg-0"
+              className="Notification_card position-relative mt-2 mb-4 mb-lg-0"
               data-aos="zoom-out-up"
             >
+              <div className="position-absolute purple-flower">
+                <Orangeflower />
+              </div>
               <Nortification />
               <p className="lh_111 fs_6md ff-roboto fw-medium text-black mb-0 pb-2 pt-1">
                 Notifications & Reminders
@@ -47,11 +58,9 @@ const MainFeatures = () => {
               className="Schedule_card mt-2 position-relative"
               data-aos="zoom-out-up"
             >
-              <img
-                src={ScheduleImg}
-                alt="ScheduleImg"
-                className="position-absolute end-0 bottom-0"
-              />
+              <div className="position-absolute purple-flower">
+                <Yellowflower />
+              </div>
               <Schedule />
               <p className="lh_111 fs_6md ff-roboto fw-medium text-black mb-0 pb-2 pt-1">
                 Schedule

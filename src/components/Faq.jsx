@@ -8,7 +8,7 @@ import FooterWave from "../assets/images/webp/FooterWave.webp";
 
 const Faq = () => {
   return (
-    <div className="position-relative pb_faq">
+    <div id="Faq" className="position-relative pb_faq">
       <img
         src={FooterWave}
         alt="FooterWave"

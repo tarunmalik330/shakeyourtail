@@ -1,6 +1,6 @@
 
 import './App.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AboutUs from './components/AboutUs';
 import CustomerExperience from './components/CustomerExperience';
 import HowItWork from './components/HowItWork';
@@ -10,6 +10,7 @@ import Header from './components/Header';
 import MainFeatures from './components/MainFeatures';
 import Pricingplan from './components/Pricingplan';
 import Testimonial from './components/Testimonial';
+import BackToTop from './assets/images/png/top.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
@@ -24,6 +25,19 @@ function App() {
     );
     Aos.refresh()
   });
+  const top = () => {
+    document.documentElement.scrollTop = 0;
+  };
+  const [backToTop, setbackToTop] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 300) {
+        setbackToTop(true);
+      } else {
+        setbackToTop(false);
+      }
+    });
+  }, []);
   return (
     <div>
       <Header />
@@ -35,6 +49,9 @@ function App() {
       <Testimonial />
       <Faq />
       <Footer />
+      <div>
+        <img onClick={() => top()} src={BackToTop} alt='BackToTop' className={backToTop ? "back_to_top" : "d-none"} />
+      </div>
     </div>
   );
 }
