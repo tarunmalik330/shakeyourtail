@@ -74,13 +74,13 @@ const AboutUs = () => {
                 <img
                   src={GooglePlay}
                   alt="GooglePlay"
-                  className="rounded-1"
+                  className="rounded-1 curser_pointer"
                   data-aos="fade-right"
                 />
                 <img
                   src={AppStore}
                   alt="AppStore"
-                  className="rounded-2"
+                  className="rounded-2 curser_pointer"
                   data-aos="fade-right"
                 />
               </div>

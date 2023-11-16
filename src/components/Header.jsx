@@ -94,17 +94,14 @@ const Header = () => {
                 Dog Grooming Software, helping to reduce 'no shows' with
                 appointment confirmations, reminders & more.
               </p>
-              <div className="d-flex gap_12 pt-2 justify-content-center align-items-center justify-content-lg-start">
-                <button
-                  className="button text-white fw-normal fs_6md ff-HelveticaNeue"
-                  data-aos="fade-right"
-                >
+              <div
+                className="d-flex gap_12 pt-2 justify-content-center align-items-center justify-content-lg-start"
+                data-aos="fade-right"
+              >
+                <button className="button text-white fw-normal fs_6md ff-HelveticaNeue">
                   Free Trial
                 </button>
-                <button
-                  className="explore_btn text-white fw-normal fs_6md ff-HelveticaNeue"
-                  data-aos="fade-right"
-                >
+                <button className="explore_btn text-white fw-normal fs_6md ff-HelveticaNeue">
                   Explore More
                 </button>
               </div>
