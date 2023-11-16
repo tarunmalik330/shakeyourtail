@@ -119,10 +119,7 @@ const Header = () => {
                 className="w-100 mw_411"
                 data-aos="zoom-in-up"
               />
-              <div
-                className="Img_box1 Img_box d-flex align-items-center gap-2"
-                data-aos="fade-right"
-              >
+              <div className="Img_box1 vertical_animation Img_box d-flex align-items-center gap-2">
                 <img src={Manager} alt="Manager" />
                 <div className="d-flex flex-column">
                   <p className="fw-bold ff-HelveticaNeue lh_150 fs_2md text-black mb-0">
@@ -133,10 +130,7 @@ const Header = () => {
                   </p>
                 </div>
               </div>
-              <div
-                className="Mobile_box Img_box d-flex align-items-center gap-2"
-                data-aos="fade-left"
-              >
+              <div className="Mobile_box vertical_animation Img_box d-flex align-items-center gap-2">
                 <GreenStar />
                 <div className="d-flex flex-column">
                   <p className="fw-bold ff-HelveticaNeue lh_150 fs_2md text-black mb-0">

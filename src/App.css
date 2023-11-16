@@ -125,6 +125,10 @@ html {
   bottom: 3%;
   right: 3%;
   cursor: pointer !important;
+  -webkit-animation: mover 3000ms infinite ease-in-out;
+  animation: mover 3000ms infinite ease-in-out;
+  filter: drop-shadow(0px 5px 8px white);
+
 }
 
 /* -------------------------header---------------------- */
@@ -816,15 +820,25 @@ html {
   filter: drop-shadow(0px 5px 8px white);
 }
 
-/* img.vertical_animation {
-  -webkit-animation: mover 1s infinite alternate;
-  animation: mover 1s infinite alternate;
+.vertical_animation {
+  -webkit-animation: mover 3000ms infinite ease-in-out;
+  animation: mover 3000ms infinite ease-in-out;
 }
 
-img.vertical_animation {
-  -webkit-animation: mover 1.5s infinite alternate;
-  animation: mover 1.5s infinite alternate;
-} */
+@keyframes mover {
+  0% {
+    transform: translateY(0px);
+  }
+
+  70% {
+    transform: translateY(-7px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .py_footer {
   /* padding-top: 120px; */
   padding-bottom: 50px;
@@ -973,7 +987,7 @@ img.vertical_animation {
   }
 
   .Img_box1 {
-    top: 37%;
+    top: 30%;
     right: 10%;
   }
 
